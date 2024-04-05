@@ -1,0 +1,61 @@
+body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background-color: darkgray;
+}
+
+.tangram-container {
+    background-color: white;
+    height: 300px;
+    width: 300px;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 25%;
+    padding: 50px;
+}
+
+.triangle-medium {
+    height: 0;
+    width: 0;
+    border-bottom: 100px solid purple;
+    border-right: 100px solid transparent;
+    position: absolute;
+    /* transform: translate(-50%, -50%); */
+    
+}
+
+.triangle-small {
+    height: 0;
+    width: 0;
+    border-bottom: 70px solid red;
+    border-right: 70px solid transparent;
+    position: absolute;
+}
+
+.square {
+	height: 0;
+	width: 0;
+	border-bottom: 70px solid green;
+	border-right: 70px solid green;
+	position: absolute;
+}
+
+#piece-1 {
+    top: 65%;
+    left: 65%;
+    rotate: y 180deg;
+}
+
+#piece-2 {
+    top: 44%;
+	left: 81.3%;
+	rotate: 45deg;
+}
+
+#piece-3 {
+	top: 56%;
+	left: 69%;
+	rotate: 45deg;
+}
