@@ -22,10 +22,7 @@ body {
 .triangle-medium {
     height: 0;
     width: 0;
-    border-bottom: 100px solid purple;
-    border-right: 100px solid transparent;
     position: absolute;
-    /* transform: translate(-50%, -50%); */
     
 }
 
@@ -41,14 +38,15 @@ body {
 	height: 0;
 	width: 0;
 	border-bottom: 70px solid green;
-	border-right: 70px solid green;
+	border-left: 70px solid green;
 	position: absolute;
 }
 
 #piece-1 {
-    top: 65%;
-    left: 65%;
-    rotate: y 180deg;
+    bottom: 40px;
+    right: 40px;
+    border-bottom: 100px solid purple;
+    border-left: 100px solid transparent;
 }
 
 #piece-2 {
