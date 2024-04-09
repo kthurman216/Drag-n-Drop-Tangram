@@ -5,6 +5,7 @@ body {
     background-color: darkgray;
 }
 
+/* add some border effects for tangram container to separate it from bg */
 .tangram-container {
     background-color: white;
     height: 300px;
@@ -15,6 +16,8 @@ body {
     left: 25%;
     padding: 50px;
 }
+
+/* need to add a base class for movable pieces for QOL improvements, i.e. hover effect to indicate clickable */
 
 .triangle-medium {
     height: 0;
