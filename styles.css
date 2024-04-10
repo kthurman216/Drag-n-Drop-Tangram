@@ -11,8 +11,8 @@ body {
     height: 200px;
     width: 200px;
     position: absolute;
-    top: 20%;
-    left: 25%;
+    top: 20vh;
+    left: 25vw;
     padding: 50px;
     border: 1px solid blue;
 }
@@ -24,11 +24,33 @@ body {
 
 .fig-container {
     position: absolute;
-    top: 19%;
-    right: 17%;
+    top: 19vh;
+    right: 17vw;
     padding: 15px;
     background-color: white;
     border: 1px solid blue;
+}
+
+.control-container {
+    position: absolute;
+    bottom: 15vh;
+    left: 43vw;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    background-color: white;
+    border: 1px solid blue;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+button {
+    cursor: pointer;
+    padding: 0;
+    margin: 0;
+    color: navy;
+    align-items: center;
+    justify-content: center;
 }
 
 /* need to add a base class for movable pieces for QOL improvements, i.e. hover effect to indicate clickable */
@@ -36,8 +58,7 @@ body {
 .triangle-medium {
     height: 0;
     width: 0;
-    position: absolute;
-    
+    position: absolute;  
 }
 
 .triangle-small {
