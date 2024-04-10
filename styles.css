@@ -54,6 +54,11 @@ button {
 }
 
 /* need to add a base class for movable pieces for QOL improvements, i.e. hover effect to indicate clickable */
+.triangle-large {
+    height: 0;
+    width: 0;
+    position: absolute;
+}
 
 .triangle-medium {
     height: 0;
@@ -73,25 +78,58 @@ button {
 	position: absolute;
 }
 
+.parallelogram {
+    width: 115px;
+    height: 56px;
+    transform: skew(-45deg);
+    background: yellow;
+}
+
 #piece-1 {
     bottom: 40px;
     right: 40px;
-    border-bottom: 100px solid purple;
-    border-left: 100px solid transparent;
+    border-bottom: 112px solid purple;
+    border-left: 112px solid transparent;
+    /* transform: rotate(270deg); */
 }
 
 #piece-2 {
-    bottom: 154px;
-	right: 5px;
+    bottom: 172px;
+	right: 1px;
 	rotate: 45deg;
-    border-bottom: 70px solid red;
-    border-right: 70px solid transparent;
+    border-bottom: 78px solid red;
+    border-right: 78px solid transparent;
+    /* transform: rotate(90deg); */
 }
 
 #piece-3 {
-    bottom: 104px;
-    right: 54px;
+    bottom: 114px;
+    right: 56px;
     rotate: 45deg;
-    border-bottom: 70px solid green;
-	border-left: 70px solid green;
+    border-bottom: 80px solid green;
+	border-left: 80px solid green;
+}
+
+#piece-4 {
+    top: 31px;
+    left: 33px;
+    border-top: 114px solid darkturquoise;
+    border-right: 114px solid transparent;
+    border-left: 114px solid transparent;
+}
+
+#piece-5 {
+    top: 31px;
+    left: 33px;
+    border-left: 114px solid violet;
+    border-top: 114px solid transparent;
+    border-bottom: 114px solid transparent;
+}
+
+#piece-6 {
+    top: 147px;
+    left: 90px;
+    border-bottom: 57px solid darkslategray;
+    border-left: 57px solid transparent;
+    border-right: 57px solid transparent;
 }
