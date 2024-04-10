@@ -8,13 +8,27 @@ body {
 /* add some border effects for tangram container to separate it from bg */
 .tangram-container {
     background-color: white;
-    height: 300px;
-    width: 300px;
+    height: 200px;
+    width: 200px;
     position: absolute;
-    transform: translate(-50%, -50%);
-    top: 50%;
+    top: 20%;
     left: 25%;
     padding: 50px;
+    border: 1px solid blue;
+}
+
+.dragElem {
+    cursor: move;
+    z-index: 9;
+}
+
+.fig-container {
+    position: absolute;
+    top: 19%;
+    right: 17%;
+    padding: 15px;
+    background-color: white;
+    border: 1px solid blue;
 }
 
 /* need to add a base class for movable pieces for QOL improvements, i.e. hover effect to indicate clickable */
@@ -29,16 +43,12 @@ body {
 .triangle-small {
     height: 0;
     width: 0;
-    border-bottom: 70px solid red;
-    border-right: 70px solid transparent;
     position: absolute;
 }
 
 .square {
 	height: 0;
 	width: 0;
-	border-bottom: 70px solid green;
-	border-left: 70px solid green;
 	position: absolute;
 }
 
@@ -50,13 +60,17 @@ body {
 }
 
 #piece-2 {
-    top: 44%;
-	left: 81.3%;
+    bottom: 154px;
+	right: 5px;
 	rotate: 45deg;
+    border-bottom: 70px solid red;
+    border-right: 70px solid transparent;
 }
 
 #piece-3 {
-	top: 56%;
-	left: 69%;
-	rotate: 45deg;
+    bottom: 104px;
+    right: 54px;
+    rotate: 45deg;
+    border-bottom: 70px solid green;
+	border-left: 70px solid green;
 }
