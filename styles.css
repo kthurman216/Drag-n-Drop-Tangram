@@ -2,7 +2,7 @@ body {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    background-color: darkgray;
+    background-color: #CBC5EA;
 }
 
 /* add some border effects for tangram container to separate it from bg */
@@ -14,7 +14,8 @@ body {
     top: 20vh;
     left: 25vw;
     padding: 50px;
-    border: 1px solid blue;
+    border-radius: 15px;
+    /* border: 1px solid blue; */
 }
 
 .dragElem {
@@ -27,8 +28,19 @@ body {
     top: 19vh;
     right: 17vw;
     padding: 15px;
+    align-items: center;
+    justify-content: center;
     background-color: white;
-    border: 1px solid blue;
+    border-radius: 15px;
+}
+
+#selected {
+    position: absolute;
+    background-color: white;
+    padding: 5px;
+    border-radius: 5px;
+    bottom: 23vh;
+    left: 45vw;
 }
 
 .control-container {
@@ -39,7 +51,6 @@ body {
     justify-content: center;
     margin: 0;
     background-color: white;
-    border: 1px solid blue;
     padding: 5px;
     border-radius: 5px;
 }
@@ -48,7 +59,11 @@ button {
     cursor: pointer;
     padding: 0;
     margin: 0;
-    color: navy;
+    border: none;
+    color: black;
+    background-color: #CBC5EA;
+    padding: 3px;
+    border-radius: 5px;
     align-items: center;
     justify-content: center;
 }
@@ -81,8 +96,7 @@ button {
 .parallelogram {
     width: 115px;
     height: 56px;
-    transform: skew(-45deg);
-    background: yellow;
+    position: absolute;
 }
 
 #piece-1 {
@@ -132,4 +146,11 @@ button {
     border-bottom: 57px solid darkslategray;
     border-left: 57px solid transparent;
     border-right: 57px solid transparent;
+}
+
+#piece-7 {
+    transform: skew(-45deg);
+    background: yellow;
+    top: 205px;
+    left: 57px;
 }

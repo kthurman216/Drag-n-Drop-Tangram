@@ -12,6 +12,7 @@ const leftbtn = document.getElementById("left");
 const rightbtn = document.getElementById("right");
 const upbtn = document.getElementById("up");
 const downbtn = document.getElementById("down");
+const sel = document.getElementById("selected");
 
 //jquery function to make objects of "dragElem" class draggable
 $( function() {
@@ -23,6 +24,30 @@ for (let i = 0; i < dragItems.length; i++) {
     dragItems[i].addEventListener("mousedown", () => {
         selectedElem = dragItems[i];
         selectedInd = i;
+        switch(selectedInd) {
+            case 0:
+                sel.style.color = "purple";
+                break;
+            case 1:
+                sel.style.color = "red";
+                break;
+            case 2:
+                sel.style.color = "green";
+                break;
+            case 3:
+                sel.style.color = "darkturquoise";
+                break;
+            case 4:
+                sel.style.color = "violet";
+                break;
+            case 5:
+                sel.style.color = "darkslategray";
+                break;
+            case 6:
+                sel.style.color = "gold";
+                break;
+        }
+        sel.innerHTML = `<span id="">Selected: ${selectedInd}</span>`
         prevX = parseInt(selectedElem.style.left);
         prevY = parseInt(selectedElem.style.top);
         console.log(selectedElem);
